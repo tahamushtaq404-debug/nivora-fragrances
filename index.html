@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivora Fragrances</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Linked Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4">
+            <!-- Brand Logo -->
+            <a class="navbar-brand font-serif fw-bold tracking-widest" href="#">
+                NIVORA <span class="d-block brand-sub">FRAGRANCES</span>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Scent Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Track Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Actions: Search & Icons -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+                <div class="search-box position-relative">
+                    <input type="text" class="form-control form-control-sm rounded-pill px-3" placeholder="Search perfumes...">
+                    <i class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                </div>
+                <a href="#" class="text-light position-relative"><i class="fa-regular fa-heart fa-lg"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-gold text-dark" style="font-size: 9px;">2</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION WITH CAROUSEL -->
+    <header class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+                <!-- Slide 1 -->
+                <div class="carousel-item active h-100" style="background: linear-gradient(rgba(18,16,14,0.6), rgba(18,16,14,0.8)), url('https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1920&q=80') center/cover;">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 text-center">
+                        <span class="text-gold text-uppercase tracking-widest small mb-2">Nivora Fragrances</span>
+                        <h1 class="font-serif display-3 fw-normal mb-3 text-white">Every great scent tells<br><i>a story in three parts.</i></h1>
+                        <p class="lead text-light mb-4 max-w-600">Top notes to open. A heart to hold your attention. A base that lingers long after you've left the room.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-gold px-4 py-2 rounded-0">Shop the Collection</a>
+                            <a href="#" class="btn btn-outline-gold px-4 py-2 rounded-0"><i class="fa-solid fa-wand-magic-sparkles me-2"></i> Take the Scent Quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        </div>
+    </header>
+
+    <!-- SECTION 1: SHOP BY CATEGORY -->
+    <section class="py-5 bg-main border-bottom border-dark">
+        <div class="container py-4">
+            <span class="text-gold text-uppercase tracking-widest small">Shop by Category</span>
+            <h2 class="font-serif text-white mb-4">Find a fragrance for everyone</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80" class="w-100 object-fit-cover" height="350" alt="Men">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 bg-gradient-dark">
+                            <h4 class="font-serif text-white mb-1">Men's Collection</h4>
+                            <a href="#" class="text-gold text-decoration-none small">Shop Now &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80" class="w-100 object-fit-cover" height="350" alt="Women">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 bg-gradient-dark">
+                            <h4 class="font-serif text-white mb-1">Women's Collection</h4>
+                            <a href="#" class="text-gold text-decoration-none small">Shop Now &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80" class="w-100 object-fit-cover" height="350" alt="Unisex">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 bg-gradient-dark">
+                            <h4 class="font-serif text-white mb-1">Unisex & Mists</h4>
+                            <a href="#" class="text-gold text-decoration-none small">Shop Now &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: FEATURED BESTSELLERS -->
+    <section class="py-5 bg-main border-bottom border-dark">
+        <div class="container py-4">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <span class="text-gold text-uppercase tracking-widest small">Customer Favourites</span>
+                    <h2 class="font-serif text-white">Bestsellers right now</h2>
+                </div>
+                <a href="#" class="btn btn-outline-gold btn-sm rounded-0">View Full Collection</a>
+            </div>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="product-item position-relative">
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 rounded-0">-15%</span>
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=500&q=80" class="w-100 object-fit-cover bg-dark-card mb-3" height="280" alt="Perfume">
+                        <h6 class="text-white font-serif mb-1">Atkinsons Oud</h6>
+                        <p class="text-gold small mb-2">Rs. 14,500</p>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="product-item position-relative">
+                        <span class="badge bg-dark border border-gold text-gold position-absolute top-0 start-0 m-3 rounded-0">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=500&q=80" class="w-100 object-fit-cover bg-dark-card mb-3" height="280" alt="Perfume">
+                        <h6 class="text-white font-serif mb-1">Victoria's Secret Mist</h6>
+                        <p class="text-gold small mb-2">Rs. 6,800</p>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="product-item position-relative">
+                        <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=500&q=80" class="w-100 object-fit-cover bg-dark-card mb-3" height="280" alt="Perfume">
+                        <h6 class="text-white font-serif mb-1">Minimalist White Edition</h6>
+                        <p class="text-gold small mb-2">Rs. 9,200</p>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="product-item position-relative">
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 rounded-0">-20%</span>
+                        <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=500&q=80" class="w-100 object-fit-cover bg-dark-card mb-3" height="280" alt="Perfume">
+                        <h6 class="text-white font-serif mb-1">Aqua Allegoria Gold</h6>
+                        <p class="text-gold small mb-2">Rs. 18,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: MEMBERSHIP BANNER -->
+    <section class="py-5 bg-membership border-bottom border-dark text-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <span class="text-gold text-uppercase tracking-widest small">Nivora Membership</span>
+                    <h2 class="font-serif display-6 mb-2">Join once. Save on every order after.</h2>
+                    <p class="text-muted mb-0">Free shipping, member-only discounts, and early access to new fragrances — starting free, upgrading whenever you're ready.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#" class="btn btn-gold px-4 py-3 rounded-0">See Membership Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer pt-5 pb-3 text-light">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <!-- Col 1: Brand Info -->
+                <div class="col-lg-3">
+                    <h3 class="font-serif fw-bold text-white mb-3">NIVORA</h3>
+                    <p class="small text-muted">Original fragrances, formulated in-house and shipped across Pakistan. Every bottle is built on a real top / middle / base note pyramid — a scent that evolves with your day, not one that fades flat.</p>
+                    <div class="social-icons d-flex gap-3 mt-3">
+                        <a href="#" class="text-light"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <!-- Col 3: Customer Care -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="text-white fw-bold mb-3">Customer Care</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2">
+                        <li><a href="#" class="text-muted text-decoration-none">Track My Order</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Returns & Exchanges</a></li>
+                       
+                    </ul>
+                </div>
+                <!-- Col 4: Get in Touch & Newsletter -->
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Get in Touch</h6>
+                    
+                    
+                    <p class="small text-muted mb-3"><i class="fa-solid fa-envelope me-2 text-gold"></i> hello@nivorafragrances.pk</p>
+                    
+                    <div class="input-group mb-2">
+                        <input type="email" class="form-control rounded-0 bg-dark text-light border-secondary" placeholder="Your email">
+                        <button class="btn btn-gold rounded-0" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                    <small class="text-muted" style="font-size: 11px;">Get 10% off your first order.</small>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Payment Info -->
+            <div class="row pt-4 border-top border-secondary align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <small class="text-muted">&copy; 2026 Nivora Fragrances. All rights reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <small class="text-muted">Cash on Delivery &bull; Cards &bull; JazzCash &bull; EasyPaisa</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

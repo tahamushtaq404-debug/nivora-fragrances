@@ -1,0 +1,124 @@
+/* Custom Luxury Theme Styling */
+:root {
+    --bg-main: #12100e;
+    --bg-card: #191614;
+    --gold: #c5a880;
+    --gold-hover: #b3956d;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #e0e0e0;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-main {
+    background-color: var(--bg-main) !important;
+}
+
+.bg-dark-card {
+    background-color: var(--bg-card);
+}
+
+.bg-membership {
+    background-color: #171412;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: var(--bg-main);
+    border-bottom: 1px solid #26221f;
+}
+
+.navbar-nav .nav-link {
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: var(--gold);
+}
+
+.brand-sub {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    font-weight: 300;
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--gold);
+    color: #12100e;
+    font-weight: 600;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    color: #12100e;
+}
+
+.btn-outline-gold {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: #12100e;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 85vh;
+    min-height: 500px;
+}
+
+/* Cards Hover Effects */
+.category-card img {
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.bg-gradient-dark {
+    background: linear-gradient(to top, rgba(18,16,14,0.95), transparent);
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #0b0a09;
+    border-top: 1px solid #26221f;
+}
+
+.site-footer a:hover {
+    color: var(--gold) !important;
+}
+
+/* Helpers */
+.tracking-widest {
+    letter-spacing: 2px;
+}
+
+.max-w-600 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
